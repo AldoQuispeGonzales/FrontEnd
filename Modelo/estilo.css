@@ -17,3 +17,9 @@ button{cursor:pointer}
 .modal.hidden{display:none}
 .modal-content{background:#041227;padding:1rem;border-radius:12px;width:90%;max-width:640px}
 @media (max-width:800px){.container{grid-template-columns:1fr}.filters{order:2}}
+.version {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 40px;
+}

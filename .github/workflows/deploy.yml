@@ -35,7 +35,9 @@ jobs:
         with:
           name: frontend-dist
           path: ./dist
-
+      - name: Borrar home.html viejo
+        run: |
+          aws s3 rm s3://${{ env.S3_BUCKET }}/home.html
       - name: Sync to S3
         run: |
           aws s3 sync ./dist s3://${{ env.S3_BUCKET }} --delete --exact-timestamps

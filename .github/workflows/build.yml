@@ -25,7 +25,7 @@ jobs:
           mkdir dist
           cp home.html dist/
           cp -r Modelo dist/
-          cp -r Contribuidor dist/
+          cp -r Controlador dist/
 
       - name: Verificar contenido de dist
         run: ls -R dist

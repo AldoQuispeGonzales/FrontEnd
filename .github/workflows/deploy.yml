@@ -38,7 +38,7 @@ jobs:
 
       - name: Sync to S3
         run: |
-          aws s3 sync ./dist s3://${{ env.S3_BUCKET }} --delete
+          aws s3 sync ./dist s3://${{ env.S3_BUCKET }} --delete --exact-timestamps
             --exclude ".git/*" \
             --exclude ".github/*"
 

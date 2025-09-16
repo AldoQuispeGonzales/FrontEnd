@@ -30,6 +30,9 @@ jobs:
       - name: Verificar contenido de dist
         run: ls -R dist
 
+      - name: Mostrar contenido de home.html
+        run: cat dist/home.html
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:

@@ -27,7 +27,7 @@ jobs:
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: arn:aws:iam::<tu-id-cuenta>:role/github-deploy-role
+          role-to-assume: arn:aws:iam::897649280051:role/github-actions-frontend-deploy-role
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Download artifact

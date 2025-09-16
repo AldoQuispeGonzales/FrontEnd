@@ -2,7 +2,7 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [master]
+    branches: [master]  # o main, según tu repo
 
 permissions:
   id-token: write

@@ -39,6 +39,8 @@ jobs:
       - name: Sync to S3
         run: |
           aws s3 sync ./dist s3://${{ env.S3_BUCKET }} --delete
+            --exclude ".git/*" \
+            --exclude ".github/*"
 
       - name: Invalidate CloudFront
         run: |
